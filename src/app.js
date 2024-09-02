@@ -18,7 +18,7 @@ app.use('/products',productRoutes);
 app.use('/sales',saleRoutes);
 
 app.get("/", function (req, resp) {
-    resp.send("hola");
+    resp.send("Hello from Vercel");
 });
 
 app.listen(3000,() => {
