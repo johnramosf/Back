@@ -15,7 +15,7 @@ const saleController = {
             const sale = new Sale(req.body);
             const product = await Product.findById(req.body.product);
             sale.product = product;
-            sale.total = await product.price * sale.quantity;
+            sale.total = product.price * sale.quantity;
             sale.save();
             res.status(200).json({ "sale": sale });
         } catch (err) {

@@ -1,7 +1,7 @@
 {
   "name": "nodeone",
   "version": "1.0.0",
-  "description": "node backend proyect for work with mongodb ",
+  "description": "node backend proyect with mongodb ",
   "main": "app.js",
   "scripts": {
     "test": "nodemon src/app.js",
