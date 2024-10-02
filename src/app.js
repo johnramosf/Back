@@ -17,9 +17,11 @@ app.use(express.urlencoded({extended:false}));
 //configurar rutas
 const productRoutes = require('./routes/product.routes');
 const saleRoutes = require('./routes/sale.routes');
+const contactFormRoutes = require('./routes/contactForm.routes'); 
 
 app.use('/products',productRoutes);
 app.use('/sales',saleRoutes);
+app.use('/contacts',contactFormRoutes);
 
 app.get("/", function (req, resp) {
     resp.send("Hello from Vercel");
